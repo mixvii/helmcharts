@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "sqlserver.fullname" . }}-deployment
+spec:
+  selector:
+    {{- include "sqlserver.labels" . | nindent 4 }}
+  ports:
+    - protocol: TCP
+      port: 1433
+      targetPort: 1433
+  type: LoadBalancer
+  {{- if .Values.ingress }}
+  ingress:
+{{ toYaml .Values.ingress |indent 4}}
+  {{- end }}

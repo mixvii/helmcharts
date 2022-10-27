@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  sqlserver:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-10-26T17:34:49.0946375+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 9f3304c83af71e4c0f4083869ae2350fc970896e4bcab07114a3cee9a930317a
+    name: sqlserver
+    type: application
+    urls:
+    - https://helmcharts.github.io/mixvii/helmcharts/sqlserver-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-26T17:34:49.0925522+08:00"

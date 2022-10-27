@@ -1,0 +1,18 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ include "sqlserver.fullname" . }}-data
+  annotations:
+    {{- if .Values.storageclass }}
+    volume.beta.kubernetes.io/storage-class: {{ .Values.storageclass}}
+    {{- end }}
+spec:
+  accessModes:
+  {{- if .Values.accessmodes }}
+  - {{ .Values.accessmodes}}
+  {{- end }}
+  resources:
+    requests:
+      {{- if .Values.storagesize }}
+      storage: {{ .Values.storagesize}}
+      {{- end }}

@@ -1,0 +1,2 @@
+1. Get SqlServer Passwd:
+kubectl --namespace {{ .Release.Namespace }}  get secret {{ include "sqlserver.fullname" . }}   -o jsonpath={.data.MSSQL_SA_PASSWORD}
