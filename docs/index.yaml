@@ -9,6 +9,6 @@ entries:
     name: sqlserver
     type: application
     urls:
-    - https://helmcharts.github.io/mixvii/helmcharts/sqlserver-0.1.0.tgz
+    - https://https://mixvii.github.io/helmcharts/sqlserver-0.1.0.tgz
     version: 0.1.0
 generated: "2022-10-26T17:34:49.0925522+08:00"
