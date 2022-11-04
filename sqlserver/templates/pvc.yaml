@@ -5,6 +5,8 @@ metadata:
   annotations:
     {{- if .Values.storageclass }}
     volume.beta.kubernetes.io/storage-class: {{ .Values.storageclass}}
+    {{ else }}
+error_no_storage_class_please_create_sc --storageclasse=: false
     {{- end }}
 spec:
   accessModes:

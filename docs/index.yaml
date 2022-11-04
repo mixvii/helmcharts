@@ -3,22 +3,12 @@ entries:
   sqlserver:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-10-27T16:31:21.4219153+08:00"
+    created: "2022-11-04T20:23:15.8726574+08:00"
     description: A Helm chart for Kubernetes
-    digest: c5a6bfc0653023c278fc1426d159fe260aa07ce76e7901cc8b853b51c1d8d0dc
+    digest: 6e452174cac17836c673a0dc00573450836fd064cf6dc4597ef04eeb9b8667c1
     name: sqlserver
     type: application
     urls:
-    - https://mixvii.github.io/helmcharts/sqlserver-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2022-10-27T16:31:21.4219153+08:00"
-    description: A Helm chart for Kubernetes
-    digest: 9f3304c83af71e4c0f4083869ae2350fc970896e4bcab07114a3cee9a930317a
-    name: sqlserver
-    type: application
-    urls:
-    - https://mixvii.github.io/helmcharts/sqlserver-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-10-27T16:31:21.4209187+08:00"
+    - https://mixvii.github.io/helmcharts/sqlserver-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-11-04T20:23:15.8716423+08:00"

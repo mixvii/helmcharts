@@ -1,0 +1,32 @@
+apiVersion: v1
+data:
+  appsettings.json: |-
+    {
+        "DetailedErrors": true,
+        "Logging": {
+            "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning",
+            "Microsoft.AspNetCore.SignalR": "Debug"
+            }
+        },
+        "ServiceBaseUrl": {{ include "masa-pm.fullname" . }}
+        "AuthServiceBaseAddress": "https://auth-service-develop.masastack.com/",//集群内调用
+        "DccOptions": {
+            "ManageServiceAddress": "https://dcc-service-develop.masastack.com/",//集群内调用
+            "RedisOptions": {
+            "Servers": [
+                {
+                "Host": "10.10.90.37",//集群内调用
+                "Port": 30120
+                }
+            ],
+            "DefaultDatabase": 0,
+            "Password": "p@ssw0rd"
+            },
+            "Secret": ""
+        }
+    }
+kind: ConfigMap
+metadata:
+  name: scheduler-databaseconfig
